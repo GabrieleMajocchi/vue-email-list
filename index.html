@@ -22,8 +22,8 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        <ul>
-            <li v-if="emails.length === 10" v-for="(email, index) in emails">
+        <ul v-if="emails.length === 10" >
+            <li v-for="(email, index) in emails">
                 {{email}}
             </li>
         </ul>
